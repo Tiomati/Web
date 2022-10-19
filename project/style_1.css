@@ -1,0 +1,27 @@
+body {
+    background: white
+}
+.zgl {
+    height: 0vw;
+    text-align: left;
+    font-size: 2vw;
+    position: relative;
+    font-family: sans-serif;
+    color: black;
+}
+.closing-button {
+    text-decoration: none;
+    display: inline-block;
+    margin: 0.2vw;
+    color: black;
+    box-shadow: 0 0 0 0.2vw black;
+    padding: 2vw 0;
+    width: 15vw;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 1vw;
+    position: relative;
+    overflow: hidden;
+    left: 80vw;
+    font-size: 2vw;
+}
