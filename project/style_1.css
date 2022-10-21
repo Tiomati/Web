@@ -1,0 +1,96 @@
+body {
+	background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+	background-size: 400% 400%;
+	animation: gradient 15s ease infinite;
+	height: 100vh;
+    margin-top: 0
+}
+
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+
+a {
+    text-decoration: none;
+}
+
+a:hover{
+    color: palevioletred;
+    box-shadow: 0 0 0 0.1vw palevioletred;
+}
+
+li {
+    list-style: none;
+}
+
+.menu ul {
+    display: flex;
+    justify-content: center;
+}
+
+.menu ul li {
+    margin-right: 10px;
+}
+
+hr {
+    height: 0.01vw;
+}
+
+.closing-button1 {
+    text-decoration: none;
+    display: inline-block;
+    margin: 0.1vw;
+    color: white;
+    box-shadow: 0 0 0 0.05vw white;
+    padding: 0.5vw 0;
+    width: 5vw;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 0.25vw;
+    position: relative;
+    overflow: hidden;
+    left: -39vw;
+    font-size: 0.5vw;
+}
+
+.closing-button2 {
+    text-decoration: none;
+    display: inline-block;
+    margin: 0.1vw;
+    color: white;
+    box-shadow: 0 0 0 0.05vw white;
+    padding: 0.5vw 0;
+    width: 10vw;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 0.5vw;
+    position: relative;
+    overflow: hidden;
+    left: 37vw;
+    font-size: 0.5vw;
+}
+
+.closing-button3 {
+    text-decoration: none;
+    display: inline-block;
+    margin: 0.1vw;
+    color: white;
+    box-shadow: 0 0 0 0.05vw white;
+    padding: 0.5vw 0;
+    width: 3vw;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 0.25vw;
+    position: relative;
+    overflow: hidden;
+    left: 37vw;
+    font-size: 0.5vw;
+}
