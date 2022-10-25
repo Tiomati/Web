@@ -1,34 +1,112 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif
+}
+
+.html,
 body {
-	background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
-	background-size: 400% 400%;
-	animation: gradient 15s ease infinite;
-	height: 100vh;
-    margin-top: 0
+    height: 100%;
+}
+
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    min-height: 100%;
+}
+
+.content {
+    flex: 1 0 auto;
+}
+
+.footer {
+    flex: 0 0 auto;
+}
+
+body {
+    background: linear-gradient(-45deg, #e73c7e, blueviolet, #23a6d5, #23d5ab);
+    background-size: 1300% 1300%;
+    animation: gradient 15s ease infinite;
 }
 
 @keyframes gradient {
-	0% {
-		background-position: 0% 50%;
-	}
-	50% {
-		background-position: 100% 50%;
-	}
-	100% {
-		background-position: 0% 50%;
-	}
+    0% {
+        background-position: 0% 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+p {
+    font-size: 16px;
+    line-height: 26px;
+    color: #1F3F68;
 }
 
 a {
     text-decoration: none;
 }
 
-a:hover{
+a:hover {
+    color: black;
+    /* box-shadow: 0 0 0 0.05vw white; */
+    border-bottom: 0;
+}
+
+a, .closing-button4:hover {
+    color: #f4a600;
+    /* box-shadow: 0 0 0 0.05vw white; */
+    border-bottom: 0;
+}
+
+a, .closing-button3:hover {
+    color: crimson;
+    text-decoration: underline;
+    /* box-shadow: 0 0 0 0.05vw white; */
+}
+
+a:active {
     color: palevioletred;
-    box-shadow: 0 0 0 0.1vw palevioletred;
+    /* box-shadow: 0 0 0 0.05vw white; */
+}
+
+.forma {
+    display: flex;
+    flex-direction: column-reverse;
+    /* background: cornflowerblue;
+    box-shadow: 5px 20px 50px rgba(16, 112, 177, 0.2);
+    border-radius: 10px;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 26px;
+    text-align: center;
+    color: #FFFFFF;
+    text-transform: uppercase; */
+}
+
+.forma form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 li {
     list-style: none;
+}
+
+header {
+    border-bottom: 1px solid #e8e8e8;
+    margin-bottom: 20px;
+}
+
+.menu {
+    margin-bottom: 5px;   
 }
 
 .menu ul {
@@ -40,33 +118,65 @@ li {
     margin-right: 10px;
 }
 
-hr {
-    height: 0.01vw;
-}
-
-.closing-button1 {
+.closing-button1 {           /* https://www.turizm.ru/ */
     text-decoration: none;
     display: inline-block;
     margin: 0.1vw;
     color: white;
-    box-shadow: 0 0 0 0.05vw white;
+    /* box-shadow: 0 0 0 0.05vw white; */
     padding: 0.5vw 0;
-    width: 5vw;
+    width: 7.4vw;
     text-align: center;
     text-transform: uppercase;
-    letter-spacing: 0.25vw;
+    letter-spacing: 0.1vw;
     position: relative;
     overflow: hidden;
-    left: -39vw;
-    font-size: 0.5vw;
+    left: 1vw;
+    font-size: 2vw;
+    list-style: none;
+    margin-right: 10px;
 }
 
 .closing-button2 {
     text-decoration: none;
     display: inline-block;
     margin: 0.1vw;
-    color: white;
-    box-shadow: 0 0 0 0.05vw white;
+    /* box-shadow: 0 0 0 0.05vw white; */
+    padding: 0.5vw 0;
+    width: 3.7vw;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 0.3vw;
+    position: relative;
+    overflow: hidden;
+    left: -32vw;
+    font-size: 0.4vw;
+    border-bottom: 1px dashed black;
+    color: black;
+}
+
+.closing-button3 {
+    text-decoration: none;
+    display: inline-block;
+    margin: 0.1vw;
+    /* box-shadow: 0 0 0 0.05vw white; */
+    padding: 0.5vw 0;
+    width: 15vw;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 0.25vw;
+    position: relative;
+    overflow: hidden;
+    left: 30vw;
+    font-size: 1vw;
+    color: #000;
+}
+
+.closing-button4 {
+    text-decoration: none;
+    display: inline-block;
+    margin: 0.1vw;
+    /* box-shadow: 0 0 0 0.05vw white; */
     padding: 0.5vw 0;
     width: 10vw;
     text-align: center;
@@ -74,16 +184,17 @@ hr {
     letter-spacing: 0.5vw;
     position: relative;
     overflow: hidden;
-    left: 37vw;
+    left: 32vw;
     font-size: 0.5vw;
+    border-bottom: 1px dashed #f4a600;
+    color: #f4a600;
 }
 
-.closing-button3 {
+.closing-button5 {
     text-decoration: none;
     display: inline-block;
     margin: 0.1vw;
-    color: white;
-    box-shadow: 0 0 0 0.05vw white;
+    /* box-shadow: 0 0 0 0.05vw white; */
     padding: 0.5vw 0;
     width: 3vw;
     text-align: center;
@@ -91,6 +202,8 @@ hr {
     letter-spacing: 0.25vw;
     position: relative;
     overflow: hidden;
-    left: 37vw;
+    left: 32vw;
     font-size: 0.5vw;
+    border-bottom: 1px dashed #000;
+    color: #000;
 }
